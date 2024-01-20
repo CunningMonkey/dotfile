@@ -1,0 +1,35 @@
+theme = "tokyonight_storm"
+
+[editor]
+true-color = true
+mouse = false
+cursorline = true
+cursorcolumn = true
+bufferline = "always"
+
+[editor.statusline]
+right = ["diagnostics", "selections", "position", "total-line-numbers", "file-type"]
+left = ["mode", "spinner", "version-control", "file-name"]
+mode.insert = "INSERT"
+mode.normal = "NORMAL"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+auto-signature-help = true
+display-messages = true
+
+[keys.insert]
+"A-j" = "normal_mode"
+j = { k = "normal_mode" }
+
+[keys.normal.space]
+"B" = "file_picker_in_current_buffer_directory"
+
+[keys.normal]
+"H" = "goto_previous_buffer"
+"L" = "goto_next_buffer"
